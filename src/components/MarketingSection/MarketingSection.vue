@@ -138,4 +138,20 @@ const props = defineProps({
 });
 </script>
 
-<style></style>
+<style scoped>
+.inner-section-content {
+  background-color: #7b39b8;
+}
+
+@media screen and (max-width: 991px) {
+  .section-wide {
+    height: auto;
+    padding: 100px 0px;
+    position: relative;
+  }
+
+  .track {
+    min-height: 0vh;
+  }
+}
+</style>
