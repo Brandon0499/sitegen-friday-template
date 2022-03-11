@@ -22,10 +22,11 @@
     </MainTitleSection>
     <AboutSection></AboutSection>
     <MarketingSection></MarketingSection>
-    <CompanyInfoSection></CompanyInfoSection>
+    <CompanyEvents></CompanyEvents>
     <CompanyMembers></CompanyMembers>
-    <ParticipateSection></ParticipateSection>
     <IndividualAgenda></IndividualAgenda>
+    <ParticipateSection></ParticipateSection>
+
     <Footer></Footer>
   </div>
 </template>
@@ -42,6 +43,7 @@ import IndividualAgenda from "./components/CompanyInfoSection/CompanyInfoCompone
 import ParticipateSection from "./components/ParticipateSection/ParticipateSection.vue";
 import Footer from "./components/FooterSection/Footer.vue";
 import Promotions from "./components/MainTitleComponents/Promotions.vue";
+import CompanyEvents from "./components/CompanyInfoSection/CompanyInfoComponents/CompanyEvents.vue";
 import { ref } from "@vue/reactivity";
 
 function test(navTitle) {
@@ -158,6 +160,67 @@ const mainTitle = ref({
   learnMoreText: "Click here to learn more",
   promotionText: "Promotion",
 });
+
+const singleAgendas = ref([
+  {
+    day: "Day 01",
+    date: "July 30",
+    agendaSchedules: ["9:00 AM", "9.30 AM"],
+    agendaTitle: "Build an employer brand that attracts top performers",
+    agendaSummary:
+      "Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.Test1",
+    showHiddenDetails: false,
+    peopleInCharge: [
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+    ],
+  },
+  {
+    day: "Day 02",
+    date: "July 31",
+    agendaSchedules: ["9:00 AM", "9.30 AM"],
+    agendaTitle: "Build an employer brand that attracts top performers",
+    agendaSummary:
+      "Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.Test2",
+    showHiddenDetails: false,
+    peopleInCharge: [
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+      {
+        imageURL:
+          "/assets/61e5bb75ba3a7e25e50bd527_isolated-shot-joyful-blonde-young.jpg",
+        name: "Jessica Walsh",
+        position: "Chief Officer",
+      },
+    ],
+  },
+]);
 </script>
 
 <style></style>

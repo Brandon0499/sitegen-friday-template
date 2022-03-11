@@ -7,145 +7,12 @@
           href="https://friday-template.webflow.io/landing/01#"
           class="content-wrapper cards w-inline-block"
           ><div class="w-layout-grid grid-card">
-            <div
-              id="w-node-_12ff7464-3378-7f39-ebe9-0837a7ccdcfc-0e305478"
-              class="center-flex-wrapper-device square bg-blue"
-            >
-              <div
-                data-w-id="c6582b19-7fb9-844d-b3ef-0d6c3b173bc2"
-                data-animation-type="lottie"
-                data-src="https://assets.website-files.com/61e5bb75ba3a7e40020bd3b2/620a967b2398a30ff0f2b0fd_shape%203%20green.json"
-                data-loop="1"
-                data-direction="1"
-                data-autoplay="1"
-                data-is-ix2-target="0"
-                data-renderer="svg"
-                data-default-duration="2.72"
-                data-duration="0"
-                class="lottie-animation-2 page"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 250 107"
-                  width="250"
-                  height="107"
-                  preserveAspectRatio="xMidYMid meet"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    transform: translate3d(0px, 0px, 0px);
-                  "
-                >
-                  <defs>
-                    <clippath id="__lottie_element_78">
-                      <rect width="250" height="107" x="0" y="0"></rect>
-                    </clippath>
-                  </defs>
-                  <g clip-path="url(#__lottie_element_78)">
-                    <g
-                      transform="matrix(-0.4226182699203491,0.9063078165054321,-0.9063078165054321,-0.4226182699203491,206.41441345214844,468.4280700683594)"
-                      opacity="1"
-                      style="display: block"
-                    >
-                      <g opacity="1" transform="matrix(1,0,0,1,-290.5,227.5)">
-                        <path
-                          fill="rgb(56,166,60)"
-                          fill-opacity="1"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                        <path
-                          stroke-linecap="butt"
-                          stroke-linejoin="miter"
-                          fill-opacity="0"
-                          stroke-miterlimit="4"
-                          stroke="rgb(255,255,255)"
-                          stroke-opacity="1"
-                          stroke-width="0"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                      </g>
-                    </g>
-                    <g
-                      transform="matrix(-0.1167229488492012,0.2503131628036499,-0.2503131628036499,-0.1167229488492012,146.03822326660156,208.2704315185547)"
-                      opacity="0.71"
-                      style="display: block"
-                    >
-                      <g
-                        opacity="1"
-                        transform="matrix(0.8739299774169922,0,0,0.8739299774169922,-507.7409973144531,100.7760009765625)"
-                      >
-                        <path
-                          fill="rgb(104,226,107)"
-                          fill-opacity="1"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                        <path
-                          stroke-linecap="butt"
-                          stroke-linejoin="miter"
-                          fill-opacity="0"
-                          stroke-miterlimit="4"
-                          stroke="rgb(255,255,255)"
-                          stroke-opacity="1"
-                          stroke-width="0"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                      </g>
-                    </g>
-                    <g
-                      transform="matrix(-0.11606762558221817,0.25061771273612976,-0.25061771273612976,-0.11606762558221817,146.2978515625,208.20980834960938)"
-                      opacity="1"
-                      style="display: block"
-                    >
-                      <g
-                        opacity="1"
-                        transform="matrix(0.8739299774169922,0,0,0.8739299774169922,-507.7409973144531,100.7760009765625)"
-                      >
-                        <path
-                          fill="rgb(104,226,107)"
-                          fill-opacity="1"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                        <path
-                          stroke-linecap="butt"
-                          stroke-linejoin="miter"
-                          fill-opacity="0"
-                          stroke-miterlimit="4"
-                          stroke="rgb(255,255,255)"
-                          stroke-opacity="1"
-                          stroke-width="0"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                      </g>
-                    </g>
-                    <g
-                      transform="matrix(-0.11672122776508331,0.25031396746635437,-0.25031396746635437,-0.11672122776508331,146.03890991210938,208.27027893066406)"
-                      opacity="1"
-                      style="display: block"
-                    >
-                      <g
-                        opacity="1"
-                        transform="matrix(0.8739299774169922,0,0,0.8739299774169922,-507.7409973144531,100.7760009765625)"
-                      >
-                        <path
-                          fill="rgb(104,226,107)"
-                          fill-opacity="1"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                        <path
-                          stroke-linecap="butt"
-                          stroke-linejoin="miter"
-                          fill-opacity="0"
-                          stroke-miterlimit="4"
-                          stroke="rgb(255,255,255)"
-                          stroke-opacity="1"
-                          stroke-width="0"
-                          d=" M0,-105 C57.949501037597656,-105 105,-57.949501037597656 105,0 C105,0 105,0 105,0 C105,57.949501037597656 57.949501037597656,105 0,105 C0,105 0,105 0,105 C-57.949501037597656,105 -105,57.949501037597656 -105,0 C-105,0 -105,0 -105,0 C-105,-57.949501037597656 -57.949501037597656,-105 0,-105 C0,-105 0,-105 0,-105z"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </div>
+            <div class="imgContainer">
+              <img
+                src="https://www.museumnext.com/wp-content/uploads/2017/06/Designing-an-Exhibition-1.jpg"
+                alt=""
+                class="eventImage"
+              />
             </div>
             <div
               id="w-node-_12ff7464-3378-7f39-ebe9-0837a7ccdcfe-0e305478"
@@ -258,12 +125,18 @@
       </div>
       <!-- <WavesSeparator></WavesSeparator> -->
     </div>
+
     <!-- <WavesSeparator></WavesSeparator> -->
+    <CompanyMembers :companyInfo="companyInfo"></CompanyMembers>
+    <WavesSeparator></WavesSeparator>
+    <CompanyAgenda :companyInfo="companyInfo"></CompanyAgenda>
   </div>
 </template>
 
 <script setup>
 import WavesSeparator from "../WavesSeparator.vue";
+import CompanyMembers from "./CompanyInfoComponents/CompanyMembers.vue";
+import CompanyAgenda from "./CompanyInfoComponents/CompanyAgenda.vue";
 
 const props = defineProps({
   companyInfo: {
@@ -273,4 +146,17 @@ const props = defineProps({
 });
 </script>
 
-<style></style>
+<style scoped>
+.imgContainer {
+  height: 40em;
+  outline: 1px solid white;
+  object-fit: fill;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.eventImage {
+  height: 40em;
+  object-fit: cover;
+}
+</style>

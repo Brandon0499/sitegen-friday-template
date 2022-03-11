@@ -147,9 +147,9 @@
         </div>
       </div>
     </div>
-    <Promotions>
+    <!-- <Promotions>
       <slot name="test"></slot>
-    </Promotions>
+    </Promotions> -->
   </div>
 </template>
 
