@@ -1,5 +1,5 @@
 <template>
-  <div class="container padding-bottom-medium">
+  <div class="container padding-bottom-medium blackBg">
     <div class="container">
       <div class="w-layout-grid main-grid">
         <div
@@ -7,10 +7,10 @@
           class="center-wrapper inner-padding-medium"
         >
           <h2 class="heading-large margin-bottom-xsmall">
-            {{ companyInfo.memberTextAs }}
+            {{ props.memberTextAs }}
           </h2>
           <p class="medium-paragraph">
-            {{ companyInfo.membersIntro }}
+            {{ props.membersIntro }}
           </p>
         </div>
       </div>
@@ -21,7 +21,7 @@
           id="w-node-_6e7598f0-4ae8-b765-38bc-ef4f35557c20-0e305478"
           role="listitem"
           class="collection-item w-dyn-item"
-          v-for="member in companyInfo.members"
+          v-for="member in props.members"
           :key="member.memberName"
         >
           <a
@@ -351,11 +351,45 @@
 
 <script setup>
 const props = defineProps({
-  companyInfo: {
-    type: Object,
-    required: true,
+  memberTextAs: {
+    type: String,
+    default: "Members",
+  },
+  membersIntro: {
+    type: String,
+    default: "Stay tuned for more annocemeents in the coming months",
+  },
+  members: {
+    type: Array,
+    default: [
+      {
+        memberName: "James Hetfield",
+        memberProfileLink:
+          "https://friday-template.webflow.io/speakers/james-hetfield",
+        memberImageURL:
+          "/assets/61fdc09d23a662eecb14d82a_portrait-happy-smiley-man.jpg",
+      },
+      {
+        memberName: "Ada Lovelace",
+        memberProfileLink:
+          "https://friday-template.webflow.io/speakers/ada-lovelace",
+        memberImageURL:
+          "https://assets.website-files.com/61e5bb75ba3a7e1b1d0bd3e5/61fdc0a871a096ee4ef00abd_portrait-good-.jpg",
+      },
+      {
+        memberName: "Tiffany Tattum",
+        memberProfileLink:
+          "https://friday-template.webflow.io/speakers/tiffany-tattum",
+        memberImageURL:
+          "https://assets.website-files.com/61e5bb75ba3a7e1b1d0bd3e5/61fdc767a1b84ad984911b54_pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg",
+      },
+    ],
   },
 });
 </script>
 
-<style></style>
+<style>
+.blackBg {
+  background-color: #272727;
+}
+</style>

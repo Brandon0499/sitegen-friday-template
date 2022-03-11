@@ -8,7 +8,7 @@
             class="heading-xlarge-hero"
             style=""
           >
-            {{ marketing.whyUsText }}
+            {{ props.whyUsText }}
           </h1>
         </div>
       </div>
@@ -33,7 +33,7 @@
           <div id="w-node-_28280f35-779c-5cf2-008c-0516b6395e27-0e305478">
             <div
               class="content-wrapper padding-bottom-medium"
-              v-for="reason in marketing.reasons"
+              v-for="reason in props.reasons"
               :key="reason.reasonTitle"
             >
               <div
@@ -110,10 +110,30 @@
 </template>
 
 <script setup>
-const prop = defineProps({
-  marketing: {
-    type: Object,
-    required: true,
+const props = defineProps({
+  whyUsText: {
+    type: String,
+    default: "Why Attend Friday festival?",
+  },
+  reasons: {
+    type: Array,
+    default: [
+      {
+        reasonTitle: "Raise your skillset to the next level.",
+        reasonParagraph:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.1",
+      },
+      {
+        reasonTitle: "Extend your industry connections.",
+        reasonParagraph:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.2",
+      },
+      {
+        reasonTitle: "Interact live with world-class experts.",
+        reasonParagraph:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.3",
+      },
+    ],
   },
 });
 </script>

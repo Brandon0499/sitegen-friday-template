@@ -256,18 +256,14 @@
           </div></a
         >
       </div>
-      <WavesSeparator></WavesSeparator>
+      <!-- <WavesSeparator></WavesSeparator> -->
     </div>
-    <CompanyMembers :companyInfo="companyInfo"></CompanyMembers>
-    <WavesSeparator></WavesSeparator>
-    <CompanyAgenda :companyInfo="companyInfo"></CompanyAgenda>
+    <!-- <WavesSeparator></WavesSeparator> -->
   </div>
 </template>
 
 <script setup>
-import CompanyMembers from "../components/CompanyMembers.vue";
-import WavesSeparator from "../../../components/WavesSeparator.vue";
-import CompanyAgenda from "../components/CompanyAgenda.vue";
+import WavesSeparator from "../WavesSeparator.vue";
 
 const props = defineProps({
   companyInfo: {
