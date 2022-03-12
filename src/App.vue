@@ -15,11 +15,7 @@
   </div>
   <div class="full-page">
     <Navbar @toggleDropdown="toggleDropdown" :navTitles="navTitles"></Navbar>
-    <MainTitleSection>
-      <!-- <template #test>
-        <Promotions :mainTitle="mainTitle"></Promotions>
-      </template> -->
-    </MainTitleSection>
+    <MainTitleSection> </MainTitleSection>
     <AboutSection></AboutSection>
     <MarketingSection></MarketingSection>
     <CompanyEvents></CompanyEvents>
@@ -42,7 +38,7 @@ import CompanyAgenda from "./components/CompanyInfoSection/CompanyInfoComponents
 import IndividualAgenda from "./components/CompanyInfoSection/CompanyInfoComponents/IndividualAgenda.vue";
 import ParticipateSection from "./components/ParticipateSection/ParticipateSection.vue";
 import Footer from "./components/FooterSection/Footer.vue";
-import Promotions from "./components/MainTitleComponents/Promotions.vue";
+
 import CompanyEvents from "./components/CompanyInfoSection/CompanyInfoComponents/CompanyEvents.vue";
 import { ref } from "@vue/reactivity";
 

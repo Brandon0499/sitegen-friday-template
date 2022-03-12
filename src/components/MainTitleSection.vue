@@ -42,8 +42,8 @@
           <div class="xlarge">{{ props.eventActivity }}</div>
         </div>
       </div>
-      <div class="wrapper-heading inner-padding-small">
-        <div class="w-layout-grid grid-buttons">
+      <div class="wrapper-heading inner-padding-small zFront">
+        <div class="w-layout-grid grid-buttons .zFront">
           <div id="w-node-acbeed1e-14e6-2f5d-f965-c0dfd171fa89-0e305478">
             <div
               data-w-id="f22dbb03-ea9e-a94b-045a-7963939b43b2"
@@ -71,7 +71,7 @@
                       class="icon-arrow"
                     />
                   </div>
-                  <div class="label-button" style="color: rgb(255, 255, 255)">
+                  <div class="label-button">
                     {{ props.joinButtonText }}
                   </div>
                 </div>
@@ -87,11 +87,12 @@
               <div class="m-button-shadow" style="display: none"></div>
             </div>
           </div>
-          <a
+          <div
             id="w-node-_786cc278-92ec-6bcd-270f-eeb81f660a90-0e305478"
             href="https://friday-template.webflow.io/landing/01#"
             class="button inline w-inline-block"
-            ><div>{{ props.learnMoreText }}</div>
+          >
+            <div>{{ props.learnMoreText }}</div>
             <div
               class="outline-hover"
               style="
@@ -99,8 +100,8 @@
                   rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                 transform-style: preserve-3d;
               "
-            ></div
-          ></a>
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -138,9 +139,51 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.zFront {
+  z-index: 20;
+}
+
+.main-button-wrap:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.main-button-wrap:hover {
+  transform: translate(10px, -10px);
+}
+
 .textMarquee p {
   display: inline-block;
   margin-top: 10px;
   margin-left: 30px;
+}
+
+.main-button-wrap .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(236, 236, 83);
+  z-index: -1;
+  border-radius: 30px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-300px);
+  transform-origin: left;
+}
+
+.main-button-wrap .button:hover::before,
+.main-button-wrap .button:focus::before {
+  transform: translateX(0px);
+  color: black;
+}
+
+.main-button-wrap.label-button {
+  color: white;
+  transition: color 2s ease-in-out;
+}
+
+.main-button-wrap:hover .label-button {
+  color: black;
 }
 </style>

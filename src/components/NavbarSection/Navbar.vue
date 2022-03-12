@@ -656,7 +656,7 @@ function toggleMenu() {
   width: 100%;
   display: flex;
   padding: 20px 30px;
-  min-height: 100vh;
+  min-height: 100px;
 }
 
 .mobileButtonOverlay {
@@ -670,7 +670,7 @@ function toggleMenu() {
   align-items: center;
   height: 40px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   border-radius: 50%;
 }
 
@@ -679,7 +679,7 @@ function toggleMenu() {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menuBtnLines::before,
@@ -691,7 +691,7 @@ function toggleMenu() {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menuBtnLines::before {

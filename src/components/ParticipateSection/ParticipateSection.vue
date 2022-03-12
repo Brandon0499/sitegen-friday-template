@@ -307,8 +307,8 @@
                         class="icon-arrow"
                       />
                     </div>
-                    <div class="label-button" style="color: rgb(255, 255, 255)">
-                      {{ props.paricipateBtnText }}
+                    <div class="label-button">
+                      {{ props.participateBtnText }}
                     </div>
                   </div>
                   <div
@@ -342,11 +342,48 @@ const props = defineProps({
     default:
       "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
   },
-  paricipateBtnText: {
+  participateBtnText: {
     type: String,
     default: "Get Started",
   },
 });
 </script>
 
-<style></style>
+<style scoped>
+.button {
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transform: translate(10px, -10px);
+}
+
+.main-button-wrap .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(236, 236, 83);
+  z-index: -1;
+  border-radius: 30px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-300px);
+  transform-origin: left;
+}
+
+.main-button-wrap .button:hover::before,
+.main-button-wrap .button:focus::before {
+  transform: translateX(0px);
+  color: black;
+}
+
+.main-button-wrap.label-button {
+  color: white;
+  transition: color 2s ease-in-out;
+}
+
+.main-button-wrap:hover .label-button {
+  color: black;
+}
+</style>

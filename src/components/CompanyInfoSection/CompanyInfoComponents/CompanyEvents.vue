@@ -59,7 +59,7 @@ const props = defineProps({
 
 <style scoped>
 .imgContainer {
-  height: 70%;
+  height: auto;
   border-radius: 35px;
   overflow: hidden;
 }
@@ -93,6 +93,7 @@ const props = defineProps({
 .textContainer {
   text-align: center;
   padding: 50px 40px 60px;
+  overflow: visible;
 }
 
 @media screen and (max-width: 991px) {
