@@ -541,7 +541,14 @@ function toggleMenu() {
 // }
 </script>
 
-<style>
+<style scoped>
+.button {
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transform: translate(10px, -10px);
+}
+
 .subNavWrapper {
   display: none;
   flex-direction: column;

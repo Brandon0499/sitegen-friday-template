@@ -7,7 +7,7 @@
           class="content-wrapper inner-padding-small"
         >
           <img
-            :src="mainTitle.emojiURL"
+            :src="props.emojiURL"
             loading="lazy"
             width="206"
             alt=""
@@ -18,71 +18,28 @@
           id="w-node-_457eb3c8-9b36-effc-ee78-fda56a38a58f-0e305478"
           class="overflow"
         >
-          <div class="xlarge">{{ mainTitle.companyFirstName }}</div>
+          <div class="xlarge">{{ props.companyFirstName }}</div>
         </div>
         <div
           id="w-node-d0a5ca32-c852-da7c-b576-7f40495022cb-0e305478"
           class="content-wrapper flex-horizontal"
         >
-          <div class="overflow-wrapper">
-            <div class="overflow-wrapper flex">
-              <div
-                class="hero-flex-ticker"
-                style="
-                  transform: translate3d(-39.408%, 0px, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                  will-change: transform;
-                "
-              >
-                <div class="heading-regular uppercase">
-                  the design event of the year
-                </div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">#FFW 2022</div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">grab a spot</div>
-                <div class="divider-bullet ticker"></div>
-              </div>
-              <div
-                class="hero-flex-ticker"
-                style="
-                  transform: translate3d(-39.408%, 0px, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                  will-change: transform;
-                "
-              >
-                <div class="heading-regular uppercase">
-                  the design event of the year
-                </div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">#FFW 2022</div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">grab a spot</div>
-                <div class="divider-bullet ticker"></div>
-              </div>
-              <div
-                class="hero-flex-ticker"
-                style="
-                  transform: translate3d(-39.408%, 0px, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                  will-change: transform;
-                "
-              >
-                <div class="heading-regular uppercase">
-                  the design event of the year
-                </div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">#FFW 2022</div>
-                <div class="divider-bullet ticker"></div>
-                <div class="heading-regular uppercase">grab a spot</div>
-                <div class="divider-bullet ticker"></div>
-              </div>
-            </div>
-          </div>
-          <div class="xlarge">{{ mainTitle.eventActivity }}</div>
+          <marquee
+            width="60%"
+            direction="left"
+            scrollamount="15"
+            class="textMarquee"
+          >
+            <p
+              class="heading-regular uppercase"
+              v-for="bannerWord in props.bannerWords"
+              :key="bannerWord"
+            >
+              &bull;{{ bannerWord }}
+            </p>
+          </marquee>
+          <!-- marquee end -->
+          <div class="xlarge">{{ props.eventActivity }}</div>
         </div>
       </div>
       <div class="wrapper-heading inner-padding-small">
@@ -115,7 +72,7 @@
                     />
                   </div>
                   <div class="label-button" style="color: rgb(255, 255, 255)">
-                    {{ mainTitle.joinButtonText }}
+                    {{ props.joinButtonText }}
                   </div>
                 </div>
                 <div
@@ -134,7 +91,7 @@
             id="w-node-_786cc278-92ec-6bcd-270f-eeb81f660a90-0e305478"
             href="https://friday-template.webflow.io/landing/01#"
             class="button inline w-inline-block"
-            ><div>{{ mainTitle.learnMoreText }}</div>
+            ><div>{{ props.learnMoreText }}</div>
             <div
               class="outline-hover"
               style="
@@ -147,19 +104,43 @@
         </div>
       </div>
     </div>
-    <!-- <Promotions>
-      <slot name="test"></slot>
-    </Promotions> -->
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  mainTitle: {
-    type: Object,
-    required: true,
+  companyFirstName: {
+    type: String,
+    default: "Apple",
+  },
+  eventActivity: {
+    type: String,
+    default: "Festival",
+  },
+  emojiURL: {
+    type: String,
+    default:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Noto_Emoji_KitKat_263a.svg/1200px-Noto_Emoji_KitKat_263a.svg.png",
+  },
+  joinButtonText: {
+    type: String,
+    default: "Join Here",
+  },
+  learnMoreText: {
+    type: String,
+    default: "Click here to learn more",
+  },
+  bannerWords: {
+    type: Array,
+    default: ["the design event of the year", "#FFW 2022", "grab a spot"],
   },
 });
 </script>
 
-<style></style>
+<style scoped>
+.textMarquee p {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="section bg-color wf-section">
-    <div class="container top-padding-large w-container">
+    <div class="container top-padding-large bottomPadding w-container">
       <div class="w-layout-grid main-grid padding-bottom-medium">
         <div
           id="w-node-_2b6e6bfb-df51-26f9-8670-bce9cb867456-0e305478"
@@ -90,74 +90,26 @@
         </div>
       </div>
     </div>
-    <div class="flex-scrolling" style="margin-top: 40px">
-      <div
-        class="w-layout-grid logo-grid-ticker"
-        style="
-          transform: translate3d(-69.963%, 0px, 0px) scale3d(1, 1, 1)
-            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform-style: preserve-3d;
-          will-change: transform;
-        "
-      >
-        <div
-          class="logo-wrap-ticker"
+
+    <marquee
+      scrollamount="10"
+      width="100%"
+      direction="left"
+      height="100px"
+      class="marqueeStyle"
+    >
+      <div class="marquee"></div>
+      <div class="tracks">
+        <img
+          :src="sponsor.sponsorImageURL"
+          alt="20"
+          height="35"
           v-for="sponsor in sponsors"
           :key="sponsor.sponsorImageURL"
-        >
-          <img
-            :src="sponsor.sponsorImageURL"
-            loading="lazy"
-            alt=""
-            class="company-logo"
-          />
-        </div>
+          class="imageSpacing"
+        />
       </div>
-      <div
-        class="w-layout-grid logo-grid-ticker"
-        style="
-          transform: translate3d(-69.963%, 0px, 0px) scale3d(1, 1, 1)
-            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform-style: preserve-3d;
-          will-change: transform;
-        "
-      >
-        <div
-          class="logo-wrap-ticker"
-          v-for="sponsor in sponsors"
-          :key="sponsor.sponsorImageURL"
-        >
-          <img
-            :src="sponsor.sponsorImageURL"
-            loading="lazy"
-            alt=""
-            class="company-logo"
-          />
-        </div>
-      </div>
-      <div
-        class="w-layout-grid logo-grid-ticker"
-        style="
-          transform: translate3d(-69.963%, 0px, 0px) scale3d(1, 1, 1)
-            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform-style: preserve-3d;
-          will-change: transform;
-        "
-      >
-        <div
-          v-for="sponsor in sponsors"
-          :key="sponsor.sponsorImageURL"
-          class="logo-wrap-ticker"
-        >
-          <img
-            :key="sponsor.sponsorImageURL"
-            loading="lazy"
-            alt=""
-            class="company-logo"
-          />
-        </div>
-      </div>
-    </div>
+    </marquee>
   </div>
 </template>
 
@@ -230,12 +182,49 @@ const props = defineProps({
 </script>
 
 <style scoped>
+/* .marqueeStyle {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.tracks {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
 .statisticsSpace {
   margin-bottom: 40px;
 }
+
+.bottomPadding {
+  padding-bottom: 100px;
+}
+
+.imageSpacing {
+  margin: 0px 100px 0px;
+}
+
 @media (min-width: 990px) {
   .statisticsWrapper {
     margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  marquee img {
+    height: 25px;
   }
 }
 </style>

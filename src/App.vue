@@ -15,16 +15,16 @@
   </div>
   <div class="full-page">
     <Navbar @toggleDropdown="toggleDropdown" :navTitles="navTitles"></Navbar>
-    <MainTitleSection :mainTitle="mainTitle">
-      <template #test>
+    <MainTitleSection>
+      <!-- <template #test>
         <Promotions :mainTitle="mainTitle"></Promotions>
-      </template>
+      </template> -->
     </MainTitleSection>
     <AboutSection></AboutSection>
     <MarketingSection></MarketingSection>
     <CompanyEvents></CompanyEvents>
     <CompanyMembers></CompanyMembers>
-    <IndividualAgenda></IndividualAgenda>
+    <IndividualAgenda :singleAgendas="singleAgendas"></IndividualAgenda>
     <ParticipateSection></ParticipateSection>
 
     <Footer></Footer>
@@ -149,17 +149,6 @@ const navTitles = ref([
     ],
   },
 ]);
-
-// MainTitleSection data
-const mainTitle = ref({
-  companyFirstName: "Apple",
-  eventActivity: "Marathon",
-  emojiURL:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Noto_Emoji_KitKat_263a.svg/1200px-Noto_Emoji_KitKat_263a.svg.png",
-  joinButtonText: "Join Here",
-  learnMoreText: "Click here to learn more",
-  promotionText: "Promotion",
-});
 
 const singleAgendas = ref([
   {
