@@ -29,17 +29,15 @@
 
 <script setup>
 import Navbar from "./components/NavbarSection/Navbar.vue";
-import MainTitleSection from "./components/MainTitleSection.vue";
+import MainTitleSection from "./components/MainTitleSection/MainTitleSection.vue";
 import AboutSection from "./components/AboutSection/AboutSection.vue";
 import MarketingSection from "./components/MarketingSection/MarketingSection.vue";
-import CompanyInfoSection from "./components/CompanyInfoSection/CompanyInfoSection.vue";
-import CompanyMembers from "./components/CompanyInfoSection/CompanyInfoComponents/CompanyMembers.vue";
-import CompanyAgenda from "./components/CompanyInfoSection/CompanyInfoComponents/CompanyAgenda.vue";
-import IndividualAgenda from "./components/CompanyInfoSection/CompanyInfoComponents/IndividualAgenda.vue";
+import CompanyEvents from "./components/CompanyInfoSection/CompanyEvents.vue";
+import CompanyMembers from "./components/CompanyInfoSection/CompanyMembers.vue";
+import IndividualAgenda from "./components/CompanyInfoSection/IndividualAgenda.vue";
 import ParticipateSection from "./components/ParticipateSection/ParticipateSection.vue";
 import Footer from "./components/FooterSection/Footer.vue";
 
-import CompanyEvents from "./components/CompanyInfoSection/CompanyInfoComponents/CompanyEvents.vue";
 import { ref } from "@vue/reactivity";
 
 function test(navTitle) {

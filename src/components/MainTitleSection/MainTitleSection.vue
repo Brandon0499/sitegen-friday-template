@@ -18,14 +18,14 @@
           id="w-node-_457eb3c8-9b36-effc-ee78-fda56a38a58f-0e305478"
           class="overflow"
         >
-          <div class="xlarge">{{ props.companyFirstName }}</div>
+          <div class="xlarge">{{ props.companyActivityTitle }}</div>
         </div>
         <div
           id="w-node-d0a5ca32-c852-da7c-b576-7f40495022cb-0e305478"
           class="content-wrapper flex-horizontal"
         >
           <marquee
-            width="60%"
+            width="100%"
             direction="left"
             scrollamount="15"
             class="textMarquee"
@@ -39,7 +39,7 @@
             </p>
           </marquee>
           <!-- marquee end -->
-          <div class="xlarge">{{ props.eventActivity }}</div>
+          <!-- <div class="xlarge">{{ props.eventActivity }}</div> -->
         </div>
       </div>
       <div class="wrapper-heading inner-padding-small zFront">
@@ -110,14 +110,14 @@
 
 <script setup>
 const props = defineProps({
-  companyFirstName: {
+  companyActivityTitle: {
     type: String,
-    default: "Apple",
+    default: "Apple Festival",
   },
-  eventActivity: {
-    type: String,
-    default: "Festival",
-  },
+  // eventActivity: {
+  //   type: String,
+  //   default: "Festival",
+  // },
   emojiURL: {
     type: String,
     default:

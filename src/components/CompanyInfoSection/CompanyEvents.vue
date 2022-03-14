@@ -28,9 +28,7 @@
 </template>
 
 <script setup>
-import WavesSeparator from "../../WavesSeparator.vue";
-// import CompanyMembers from "./CompanyInfoComponents/CompanyMembers.vue";
-// import CompanyAgenda from "./CompanyInfoComponents/CompanyAgenda.vue";
+import WavesSeparator from "../WavesSeparator.vue";
 
 const props = defineProps({
   events: {

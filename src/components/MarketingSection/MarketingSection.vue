@@ -45,6 +45,7 @@
               <p class="medium-paragraph">
                 {{ reason.reasonParagraph }}
               </p>
+              <!-- waves separator -->
               <div class="flex">
                 <div
                   data-w-id="01c3f3e3-59c1-c584-d75d-f23ff8a34bec"

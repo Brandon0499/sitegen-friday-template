@@ -6,15 +6,20 @@
           id="w-node-_2bca43ef-7cde-b5da-b1b2-716107bf8e46-07bf8e43"
           class="content-wrapper"
         >
-          <img :src="companyLogo" loading="lazy" alt="" class="logo-footer" />
+          <img
+            :src="props.companyLogo"
+            loading="lazy"
+            alt=""
+            class="logo-footer"
+          />
           <p class="main-paragraph">
-            {{ companyDescription }}
+            {{ props.companyDescription }}
           </p>
         </div>
         <ul
           role="list"
           class="w-list-unstyled"
-          v-for="list in footerLists"
+          v-for="list in props.footerLists"
           :key="list"
         >
           <li>
@@ -37,7 +42,7 @@
           <a
             :href="socialMediaLink.link"
             class="link-icons center w-inline-block"
-            v-for="socialMediaLink in socialMediaLinks"
+            v-for="socialMediaLink in props.socialMediaLinks"
             :key="socialMediaLink.image"
             ><img
               :src="socialMediaLink.image"
@@ -51,9 +56,9 @@
           class="footer-inner"
         >
           <div class="main-paragraph size-small">
-            © {{ companyName }} — Powered by
+            © {{ props.companyName }} — Powered by
             <a :href="creatorCompanyWebsite" target="_blank">{{
-              creatorCompany
+              props.creatorCompany
             }}</a>
           </div>
         </div>
@@ -63,7 +68,9 @@
         >
           <div class="main-paragraph size-small">
             Created by
-            <a :href="creatorLink" target="_blank">{{ creatorName }}</a>
+            <a :href="props.creatorLink" target="_blank">{{
+              props.creatorName
+            }}</a>
           </div>
         </div>
       </div>

@@ -7,10 +7,10 @@
           class="callout-wrapper padding-bottom-small"
         >
           <h1 class="heading-xlarge text-yellow margin-bottom-small">
-            {{ companySlogan }}
+            {{ props.companySlogan }}
           </h1>
           <p class="main-paragraph size-large text-white-opacity">
-            {{ companySummary }}
+            {{ props.companySummary }}
           </p>
           <div class="flex">
             <div
@@ -74,13 +74,13 @@
           id="w-node-_6341ee7c-c590-47e8-d3cc-5c75418cc276-0e305478"
           class="callout-wrapper"
         >
-          <h2 class="heading-small">About {{ companyFullName }}</h2>
+          <h2 class="heading-small">About {{ props.companyFullName }}</h2>
         </div>
       </div>
       <div class="statisticsWrapper">
         <div
           class="callout-box-wrapper statisticsSpace"
-          v-for="statistic in statistics"
+          v-for="statistic in props.statistics"
           :key="statistic.statisticFor"
         >
           <div class="value large text-yellow">
@@ -104,7 +104,7 @@
           :src="sponsor.sponsorImageURL"
           alt="20"
           height="35"
-          v-for="sponsor in sponsors"
+          v-for="sponsor in props.sponsors"
           :key="sponsor.sponsorImageURL"
           class="imageSpacing"
         />
